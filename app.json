@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "besucherdew",
+    "slug": "besucherdew",
+    "version": "1.4.0",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/26d3d9e2-4c2b-49cf-ba54-88fa326f44f5"
+    },
+    "plugins": [
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "LANDSCAPE"
+        }
+      ]
+    ],
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "requireFullScreen": true,
+
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mekanizm.besucherdew",
+      "infoPlist": {
+        "NSFileSharingEnabled": true
+      }
+    },
+    "android": {
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "SHARE_FILES"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.mekanizm.besucherdew"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "26d3d9e2-4c2b-49cf-ba54-88fa326f44f5"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}
